@@ -63,8 +63,8 @@ public class Game {
     }
 
     public void reveal() {
-        for (int i = 0; i < players.length; i++) {
-            System.out.println("Игрок №" + (i + 1) + ":" + players[i].showCards());
+        for (Player player : players) {
+            System.out.println(player.getName() + ":" + player.showCards());
         }
     }
 
